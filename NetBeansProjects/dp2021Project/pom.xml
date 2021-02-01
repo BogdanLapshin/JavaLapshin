@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.obrii.mit.dp2021.lapshin</groupId>
-    <artifactId>BogdanLapshin2021</artifactId>
+    <artifactId>JavaLapshin</artifactId>
     <version>01</version>
     <packaging>war</packaging>
 
-    <name>BogdanLapshin2021</name>
+    <name>JavaLapshin</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
