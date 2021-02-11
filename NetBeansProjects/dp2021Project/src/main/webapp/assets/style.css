@@ -53,10 +53,10 @@ header {
     font-size: 60px;
     background-color: rgba(0,0,0,0.5);
     padding: 20px;
-    width: 3000px;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
-    color: white;
+    
     
 }
 
