@@ -48,12 +48,7 @@
 					<span class="focus-input100"></span>
 				</div>
                                 
-                                <div class="wrap-input100 validate-input" data-validate = "Valid number is required: +(XX)XXX-XXX-XX-XX">
-					<span class="label-input100">Number</span>
-					<input class="input100" type="text" name="number" placeholder="Enter your number">
-					<span class="focus-input100"></span>
-				</div>
-
+                                
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 					<span class="label-input100">Email</span>
 					<input class="input100" type="text" name="email" placeholder="Enter your email addess">
