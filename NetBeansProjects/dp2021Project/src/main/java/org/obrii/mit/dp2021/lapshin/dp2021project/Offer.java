@@ -1,19 +1,23 @@
-package org.obrii.mit.dp2021.lapshin.dp2021project;
 
+package org.obrii.mit.dp2021.lapshin.dp2021project;
+import Services.*;
+import java.util.ArrayList;
 import java.util.List;
 
-public class User implements NewHuman {
-
+public class Offer extends User {
+    
     private String Name;
     private String Number;
     private String Mail;
     private String Service;
     private String Message;
 
-    public User() {
+    public Offer() {
     }
 
-    public User(String name, String number, String mail, String service, String message) {
+    
+
+    public Offer(String name, String number, String mail, String service, String message) {
         Name = name;
         Number = number;
         Mail = mail;
@@ -40,9 +44,19 @@ public class User implements NewHuman {
         return Message;
     }
 
-    
+
+ 
+
     @Override
-    public List <Services> getServices() {
-        return null;
+    public List<Services> getServices() {
+        List<Services> services= new ArrayList<>();
+
+        services.add(new Ecommerse());
+        services.add(new OnlineService());
+        services.add(new OnlineStore());
+        
+        return services;
     }
 }
+ 
+

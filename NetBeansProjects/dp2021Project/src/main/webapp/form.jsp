@@ -3,7 +3,9 @@
     Created on : 10.02.2021, 21:16:21
     Author     : bogdanlapshin
 --%>
-
+<%@ page import="org.obrii.mit.dp2021.lapshin.dp2021project.Services" %>
+<%@ page import="org.obrii.mit.dp2021.lapshin.dp2021project.NewHuman" %>
+<%@ page import="org.obrii.mit.dp2021.lapshin.dp2021project.User" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,11 +35,13 @@
 <!--===============================================================================================-->
 </head>
 <body>
+    <% NewHuman user = (NewHuman) request.getAttribute(""); %>
+   
 
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+                    <form class="contact100-form validate-form" action="<%=request.getContextPath()%>/form" method="POST">
 				<span class="contact100-form-title">
 					Say Hello!
 				</span>
@@ -48,39 +52,38 @@
 					<span class="focus-input100"></span>
 				</div>
                                 
+                                				
+                                <div class="wrap-input100 validate-input" data-validate = "Valid number is required: +(XX)XXX-XXX-XX-XX">
+					<span class="label-input100">Number</span>
+					<input class="input100" type="text" name="number" placeholder="Enter your number">
+					<span class="focus-input100"></span>
+				</div>				
+				
+
+                                
                                 
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 					<span class="label-input100">Email</span>
-					<input class="input100" type="text" name="email" placeholder="Enter your email addess">
+					<input class="input100" type="text" name="mail" placeholder="Enter your email addess">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 input100-select">
 					<span class="label-input100">Needed Services</span>
 					<div>
-						<select class="selection-2" name="service">
-							<option>Choose Services</option>
-							<option>Online Store</option>
-							<option>eCommerce Bussiness</option>
-							<option>UI/UX Design</option>
-							<option>Online Services</option>
+						<select class="selection-2" name="services">
+                                                   
+                                                    <% for (Services service : user.getServices()) {%>
+                                                         <option value="<%= service.getService()%>">
+                                                             <%=service.getService()%>
+                                                         </option>
+                                                    <%}%>
+                                                    
 						</select>
 					</div>
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 input100-select">
-					<span class="label-input100">Budget</span>
-					<div>
-						<select class="selection-2" name="budget">
-							<option>Select Budget</option>
-							<option>1500 $</option>
-							<option>2000 $</option>
-							<option>2500 $</option>
-						</select>
-					</div>
-					<span class="focus-input100"></span>
-				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<span class="label-input100">Message</span>
