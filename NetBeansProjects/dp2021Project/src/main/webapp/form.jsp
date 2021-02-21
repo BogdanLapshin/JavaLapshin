@@ -35,7 +35,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
-    <% NewHuman user = (NewHuman) request.getAttribute(""); %>
+    <% NewHuman user = (NewHuman) request.getAttribute("user"); %>
    
 
 
@@ -67,24 +67,25 @@
 					<input class="input100" type="text" name="mail" placeholder="Enter your email addess">
 					<span class="focus-input100"></span>
 				</div>
-
-				<div class="wrap-input100 input100-select">
-					<span class="label-input100">Needed Services</span>
+                                
+                                
+                                
+                                <div class="wrap-input100 input100-select">
+					<span class="label-input100">Needed buisness</span>
 					<div>
-						<select class="selection-2" name="services">
-                                                   
-                                                    <% for (Services service : user.getServices()) {%>
-                                                         <option value="<%= service.getService()%>">
-                                                             <%=service.getService()%>
-                                                         </option>
-                                                    <%}%>
-                                                    
+						<select class="selection-2" name="service">
+							<option>E-commerse</option>
+							<option>E-commerse</option>
+							<option>E-commerse</option>
+							
 						</select>
 					</div>
 					<span class="focus-input100"></span>
 				</div>
-
-
+                                
+                                
+                                
+                             
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<span class="label-input100">Message</span>
 					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>

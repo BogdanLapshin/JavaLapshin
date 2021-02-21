@@ -41,7 +41,7 @@ public class Offer extends User {
         return Service;
     }
     public String getMessage() {
-        return Message;
+        return Mail;
     }
 
 
