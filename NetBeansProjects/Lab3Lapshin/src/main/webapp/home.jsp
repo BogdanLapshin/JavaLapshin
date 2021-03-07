@@ -5,7 +5,7 @@
 --%>
 
 <%@page import="java.util.List"%>
-<%@page import="org.obrii.mit.lapshin.lab3lapshin.data.Data"%>
+<%@page import="org.obrii.mit.lapshin.lab3lapshin.data.servlet.Data"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
