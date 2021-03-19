@@ -8,10 +8,7 @@ package org.obrii.mit.dp2021.nevmerzhytskyi.house;
 import org.obrii.mit.dp2021.nevmerzhytskyi.display.Display;
 import org.obrii.mit.dp2021.nevmerzhytskyi.user.UserInterface;
 
-/**
- *
- * @author NEVM PC
- */
+
 public abstract class HouseAbstractDisplay extends Display implements HouseDisplayInterface{
 
     public HouseAbstractDisplay(UserInterface userInterface) {

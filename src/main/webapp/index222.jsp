@@ -1,8 +1,3 @@
-<%-- 
-    Document   : newjsp
-    Created on : 13 січ. 2021 р., 21:35:34
-    Author     : 38068
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

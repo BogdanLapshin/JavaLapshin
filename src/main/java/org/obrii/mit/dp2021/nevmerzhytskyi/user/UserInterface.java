@@ -5,10 +5,7 @@
  */
 package org.obrii.mit.dp2021.nevmerzhytskyi.user;
 
-/**
- *
- * @author NEVM PC
- */
+
 public interface UserInterface {
     
     public String getName();

@@ -19,10 +19,7 @@ import org.obrii.mit.dp2021.nevmerzhytskyi.files.Config;
 import org.obrii.mit.dp2021.nevmerzhytskyi.files.FilesCrud;
 import org.obrii.mit.dp2021.nevmerzhytskyi.storehouse.DataCrudInterface;
 
-/**
- *
- * @author NEVM PC
- */
+
 @WebServlet(name = "DinamicFormUpdate", urlPatterns = {"/DinamicFormUpdate"})
 public class DinamicFormUpdate extends HttpServlet {
             //DataCrudInterface dataCrud = new FilesCrud(new File(Config.getFileName()));

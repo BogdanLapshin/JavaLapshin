@@ -5,10 +5,7 @@
  */
 package org.obrii.mit.dp2021.nevmerzhytskyi.files;
 
-/**
- *
- * @author 38068
- */
+
 public class Config {
     
     private static String fileName="";

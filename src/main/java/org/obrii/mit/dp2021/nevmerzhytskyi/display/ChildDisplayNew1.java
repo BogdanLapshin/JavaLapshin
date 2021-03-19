@@ -8,10 +8,7 @@ package org.obrii.mit.dp2021.nevmerzhytskyi.display;
 import org.obrii.mit.dp2021.nevmerzhytskyi.nevmerzhytskyiproject.InvestorDisplay;
 import org.obrii.mit.dp2021.nevmerzhytskyi.user.UserInterface;
 
-/**
- *
- * @author NEVM PC
- */
+
 public class ChildDisplayNew1 extends InvestorDisplay{
 
     public ChildDisplayNew1(UserInterface userInterface) {

@@ -29,10 +29,7 @@ import org.obrii.mit.dp2021.nevmerzhytskyi.database.DataStore;
 //import org.obrii.mit.dp2021.nevmerzhytskyi.files.Config;
 //import org.obrii.mit.dp2021.nevmerzhytskyi.files.FilesCrud;
 
-/**
- *
- * @author NEVM PC
- */
+
 @WebServlet(name = "BDServlet", urlPatterns = {"/DataBase"})
 public class BDServlet extends HttpServlet {
     String  formType1 = "update"; 

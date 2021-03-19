@@ -20,10 +20,7 @@ import org.obrii.mit.dp2021.nevmerzhytskyi.data.Data;
 import org.obrii.mit.dp2021.nevmerzhytskyi.storehouse.DataCrudInterface;
 
 
-/**
- *
- * @author 38068
- */
+
 public class FilesCrud implements DataCrudInterface {
 
     private File file;

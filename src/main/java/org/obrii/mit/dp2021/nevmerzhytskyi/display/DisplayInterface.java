@@ -5,10 +5,7 @@
  */
 package org.obrii.mit.dp2021.nevmerzhytskyi.display;
 
-/**
- *
- * @author NEVM PC
- */
+
  public  interface DisplayInterface {
      
     // public String showMessage(UserInterface useruInterface);

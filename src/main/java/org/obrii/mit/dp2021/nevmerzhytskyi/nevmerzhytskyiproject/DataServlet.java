@@ -18,10 +18,7 @@ import org.obrii.mit.dp2021.nevmerzhytskyi.storehouse.DataCrudInterface;
 
 
 
-/**
- *передача из jsp к jsp
- * @author NEVM PC
- */
+
 @WebServlet(name = "DataServlet", urlPatterns = {"/Data"})
 public class DataServlet extends HttpServlet {
     DataCrudInterface dataCrud = new FilesCrud(new File(Config.getFileName()));

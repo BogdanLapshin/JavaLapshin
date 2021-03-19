@@ -21,12 +21,9 @@ public class BaseInteractions {
     }
 
     public void addData(String data, String table){
-        //data=('iPhone X', 76000)
-        //table=Products(ProductName, Price)
+      
         try{
-             //String url = "jdbc:mysql://localhost/store?serverTimezone=Europe/Moscow&useSSL=false";
-             //String username = "root";
-             //String password = "password";
+            
              Class.forName("org.postgresql.Driver").getDeclaredConstructor().newInstance();
              try (Connection conn = DriverManager.getConnection(url, username, password)){
                 Statement statement = conn.createStatement();

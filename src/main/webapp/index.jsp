@@ -1,8 +1,4 @@
-<%-- 
-    Document   : index
-    Created on : 29.01.2021, 15:42:04
-    Author     : NEVM PC
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,54 +7,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nevm main</title>
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/main.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/300.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/300-700.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/700-1000.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/1000-1200.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/1200+.css"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
-<header>
-    <div id="logo__white" class="logo">
-        <img  src="img/Vector 1 (Stroke).png" alt="Stroke__white">
-        <img  src="img/HOLMES BUILDERS.png" alt="HOLMES">
-    </div>
-    <nav class="header__nav">
-        <ul class="header__ul">
-            <li>
-                
-            </li>
-        </ul>
-    </nav>
-</header>
+
 
 <main>
-    <div id="started__block">
-        <h1>Makes homes <br> without over <br>prices & long terms</h1>
-        <p>We looks like fake but it false opinion</p> 
-        <form action="<%=request.getContextPath()%>/DataBase" method="get">
-                <input id="get__started" type="submit" value="GET STRATED"> 
-                </form>
-<!--        <button id="sham__button" >OPEN CIRCUIT</button>-->
+    
+         
+        
+
        
-    </div>
+   
+                
+                <div class="container-contact100">
+		<div class="wrap-contact100">
+                    
+                    <span class="contact100-form-title">
+					Hi, lets go to form!
+                    </span>
+                    
+                   
+                
+                    
+                    <a href="<%=request.getContextPath()%>/DataBase" class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<div class="contact100-form-btn">
+							<span>
+								<form action="<%=request.getContextPath()%>/DataBase" method="get">
+                <input id="get__started" type="submit" value="GET STRATED"> 
+        </form>
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+                    </a>
+                    
+                   
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
     
 
-<!-- <div class="input__thank">
-    <h1>Thank you for the application</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum, quam nec faucibus 
-        semper, risus nunc fermentum ipsum, a rutrum nisi est a purus. Donec vel pulvinar elit, sed 
-        ornare nibh. Aliquam aliquet molestie erat a porta. Nullam vel augue mattis, 
-        tempus magna ac, porta augue.</p>
-    <button>Закрыть</button>
-</div> -->
+
 </main>
 
 <script src="<%=request.getContextPath()%>/js/main.js"></script>
+     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <!--===============================================================================================-->
+                <script src="vendor/animsition/js/animsition.min.js"></script>
+        <!--===============================================================================================-->
+                <script src="vendor/bootstrap/js/popper.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!--===============================================================================================-->
+                <script src="vendor/select2/select2.min.js"></script>
+                <script>
+                        $(".selection-2").select2({
+                                minimumResultsForSearch: 20,
+                                dropdownParent: $('#dropDownSelect1')
+                        });
+                </script>
+        <!--===============================================================================================-->
+                <script src="vendor/daterangepicker/moment.min.js"></script>
+                <script src="vendor/daterangepicker/daterangepicker.js"></script>
+        <!--===============================================================================================-->
+                <script src="vendor/countdowntime/countdowntime.js"></script>
+        <!--===============================================================================================-->
+                <script src="js/main.js"></script>
+
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-23581568-13');
+        </script>
 </body>
 </html>

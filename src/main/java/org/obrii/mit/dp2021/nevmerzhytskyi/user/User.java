@@ -5,10 +5,7 @@
  */
 package org.obrii.mit.dp2021.nevmerzhytskyi.user;
 
-/**
- *
- * @author 38068
- */
+
 import java.util.Arrays;
 import java.util.List;
 

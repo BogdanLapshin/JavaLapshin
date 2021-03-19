@@ -1,23 +1,30 @@
-<%-- 
-    Document   : form2
-    Created on : 01.03.2021, 13:03:37
-    Author     : NEVM PC
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Nevm Form</title>
-        <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css">
-        <link rel="stylesheet" href="<%=request.getContextPath()%>/css/main.css">
-        <link rel="stylesheet" href="<%=request.getContextPath()%>/css/300.css">
-        <link rel="stylesheet" href="<%=request.getContextPath()%>/css/300-700.css">
-        <link rel="stylesheet" href="<%=request.getContextPath()%>/css/700-1000.css">
-        <link rel="stylesheet" href="<%=request.getContextPath()%>/css/1000-1200.css">
-        <link rel="stylesheet" href="<%=request.getContextPath()%>/css/1200+.css"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+       
+        
     </head>
     <body>
        
@@ -34,7 +41,7 @@
        <form action= "<%=request.getContextPath()%><%if(name == "update"){%>/Forma<%}else{%>/DataBase<%}%>" method="post">
                 <input type="hidden" name="id" value="<%if(name == "update"){%><%=request.getParameter("id")%><%}else{%>0<%}%>">
                 <div class="form__top">
-                    <p>Enter the project name:</p>
+                    <p>Enter project name:</p>
                     <input type="text" name="name" value="<%if(name == "update"){%><%=request.getParameter("name")%><%}else{%><%}%>">
                 </div>
                 <div class="form__bottom">
@@ -67,23 +74,37 @@
         <%if(name == "update"){%><%}else{%><%}%>
         <%if(name == "update"){%><%}else{%><%}%>  
         </main>   
-            <footer>
+            
         
-                <img src="img/Logo.png" alt="">
-                <div class="footer__email">
-                    <p>Investor Newsletter Sign Up</p>
-                    <input type="email" placeholder="E-mail">
-                    
-                </div>
-        
+                <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <!--===============================================================================================-->
+                <script src="vendor/animsition/js/animsition.min.js"></script>
+        <!--===============================================================================================-->
+                <script src="vendor/bootstrap/js/popper.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!--===============================================================================================-->
+                <script src="vendor/select2/select2.min.js"></script>
+                <script>
+                        $(".selection-2").select2({
+                                minimumResultsForSearch: 20,
+                                dropdownParent: $('#dropDownSelect1')
+                        });
+                </script>
+        <!--===============================================================================================-->
+                <script src="vendor/daterangepicker/moment.min.js"></script>
+                <script src="vendor/daterangepicker/daterangepicker.js"></script>
+        <!--===============================================================================================-->
+                <script src="vendor/countdowntime/countdowntime.js"></script>
+        <!--===============================================================================================-->
+                <script src="js/main.js"></script>
 
-
-
-
-
-        
-        
-    
-    </footer> 
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-23581568-13');
+        </script>
     </body>
 </html>

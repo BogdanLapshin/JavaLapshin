@@ -7,10 +7,7 @@ package org.obrii.mit.dp2021.nevmerzhytskyi.display;
 
 import org.obrii.mit.dp2021.nevmerzhytskyi.user.UserInterface;
 
-/**
- *
- * @author NEVM PC
- */
+
 public class Display implements DisplayInterface{
 
     private UserInterface userInterface;

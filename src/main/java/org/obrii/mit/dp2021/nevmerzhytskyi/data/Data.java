@@ -9,10 +9,7 @@ import java.io.Serializable;
 
 
 
-/**
- *
- * @author NEVM PC
- */
+
 public class  Data implements Serializable {
     private int id;
     private String name;

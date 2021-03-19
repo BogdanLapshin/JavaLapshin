@@ -5,10 +5,7 @@
  */
 package knu.fit.mit.web1;
 
-/**
- *
- * @author 38068
- */
+
 public class UserLogin {
     
     private String userName="";
