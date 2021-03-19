@@ -9,10 +9,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-/**
- *
- * @author NEVM PC
- */
 public class BaseInteractions {
         private String url;
         private String username;

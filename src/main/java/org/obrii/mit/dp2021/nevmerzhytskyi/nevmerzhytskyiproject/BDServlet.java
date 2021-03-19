@@ -70,7 +70,7 @@ public class BDServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-                BaseInteractions baseI = new BaseInteractions("jdbc:postgresql://obrii.org:5432/db2021mit21s13","s13","6746");
+                BaseInteractions baseI = new BaseInteractions("jdbc:postgresql://obrii.org:5432/db2021mit21s10","s10","8449");
                 formType1="create";
                 baseI.addData("('"+request.getParameter("name")+"','"+Integer.parseInt(request.getParameter("age"))+"')","users(name, age)");
                 doGet(request, response);
@@ -83,7 +83,7 @@ public class BDServlet extends HttpServlet {
             throws ServletException, IOException {
                 int myId = Integer.parseInt(request.getParameter("id"));
                 formType1="update";
-                BaseInteractions baseI = new BaseInteractions("jdbc:postgresql://obrii.org:5432/db2021mit21s13","s13","6746");
+                BaseInteractions baseI = new BaseInteractions("jdbc:postgresql://obrii.org:5432/db2021mit21s10","s10","8449");
                 baseI.updataData(request.getParameter("name"), "name",myId);
                 baseI.updataData(request.getParameter("age"),"age",myId);
                 doGet(request, response);
@@ -92,7 +92,7 @@ public class BDServlet extends HttpServlet {
       @Override
     protected void doDelete(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-                BaseInteractions baseI = new BaseInteractions("jdbc:postgresql://obrii.org:5432/db2021mit21s13","s13","6746");       
+                BaseInteractions baseI = new BaseInteractions("jdbc:postgresql://obrii.org:5432/db2021mit21s10","s10","8449");    
                 int myId = Integer.parseInt(request.getParameter("id"));
                 baseI.deleteData(myId);
                 doGet(request, response);

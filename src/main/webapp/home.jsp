@@ -28,7 +28,7 @@
     <body>
         
        <header id="home__header">
-        <img id="logo__blue" src="img/Logo.png" alt="Stroke__blue">
+        
         <%
         
         %>
@@ -61,13 +61,12 @@
              %>
              
              
-             <img src="img/image__<%=imgNum%>.png" alt="">
+       
             <div class="project__text">
                 <h1><%=data.getId() %> <%=data.getName()%></h1>
                 <div class="home__submit" >
                     <p>Price: <br><%=data.getAge()%><span> $</span></p>
-                    <p>Place: <br><span>1 024 m<sup><small>2</small></sup></span></p>
-                    <p>Aera: <br><span>2 024 m<sup><small>2</small></sup></span></p>
+                    
                     <form action="<%=request.getContextPath()%>/DinamicFormUpdate" methd="get">
                         <input type="hidden" name="id" value="<%=data.getId() %>">
                         <input type="hidden" name="name" value="<%=data.getName()%>">
@@ -77,7 +76,7 @@
                         <form action="<%=request.getContextPath()%>/Forma" methd="get" >
                         <input type="hidden" name="id" value="<%=data.getId() %>">
                         <input type="submit" value="delete data">
-                        </form>
+                    </form>
                 </div>
             </div>
         </div>
@@ -99,12 +98,7 @@
         </form>
       <footer>
     
-        <img src="img/Logo.png" alt="">
-        <div class="footer__email">
-            <p>Investor Newsletter Sign Up</p>
-            <input type="email" placeholder="E-mail">
-            
-        </div>
+        
     
 
 </footer>  

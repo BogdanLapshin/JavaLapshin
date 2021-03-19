@@ -26,10 +26,6 @@ import org.obrii.mit.dp2021.nevmerzhytskyi.database.BaseInteractions;
  * and open the template in the editor.
  */
 
-/**
- *
- * @author NEVM PC
- */
 public class DataStore {
     List<Data> data = new ArrayList<>();
     

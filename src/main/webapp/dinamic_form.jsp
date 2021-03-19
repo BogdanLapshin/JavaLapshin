@@ -20,11 +20,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-       <header>
-            <img id="logo__blue" src="img/Logo.png" alt="Stroke__blue">
-        
-        
-        </header>
+       
+       
         <main id="form__din">
         <%
             String name = (String) session.getAttribute("formType1");
