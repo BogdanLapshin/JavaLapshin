@@ -1,10 +1,6 @@
-<%-- 
-    Document   : home.jsp
-    Created on : 01.03.2021, 12:15:55
-    Author     : NEVM PC
---%>
 
-<%@page import="org.obrii.mit.dp2021.nevmerzhytskyi.data.Data"%>
+
+<%@page import="org.obrii.mit.dp2021.lapshin.data.Data"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -14,7 +10,7 @@
     
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>LapshinLaba 5</title>
+        <title>Lapshin Laba 5</title>
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/main.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/300.css">
