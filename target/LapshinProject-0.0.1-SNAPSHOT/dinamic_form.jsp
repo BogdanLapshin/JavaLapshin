@@ -1,14 +1,10 @@
-<%-- 
-    Document   : form2
-    Created on : 01.03.2021, 13:03:37
-    Author     : NEVM PC
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Nevr</title>
+        <title>Lapshin Laba 5</title>
         <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css">
         <link rel="stylesheet" href="<%=request.getContextPath()%>/css/main.css">
         <link rel="stylesheet" href="<%=request.getContextPath()%>/css/300.css">
