@@ -1,10 +1,10 @@
-package org.obrii.fit.mit.NevmProject;
+package org.obrii.fit.mit.LapProject;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NevmProjectApplicationTests {
+class LapshinProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
