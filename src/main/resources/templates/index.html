@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lapshin6 Laba</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{css/style.css}">
+  </head>
+  <body>
+    <div class="page" th:switch="${users}">
+
+      <div class="page__container">
+        
+        <div class="page__paragraphs">
+          <p class="page__paragraph">
+            Name
+          </p>
+          
+          <p class="page__paragraph">
+            Email
+          </p>
+          
+          <p class="page__paragraph">
+            Update
+          </p>
+          
+          <p class="page__paragraph">
+            Delete
+          </p>
+        </div>
+        
+        <div class="page__users" th:case="*">
+          <div class="page__body" th:each="user : ${users}">
+            <div class="page__row">
+              <p class="page__cell" th:text="${user.name}"></p>
+            </div>
+            <div class="page__row">
+              <p class="page__cell" th:text="${user.email}"></p>
+            </div>
+            <div class="page__row">
+              <p class="page__cell"><a th:href="@{/edit/{id}(id=${user.id})}">Edit</a></p>
+            </div>
+            <div class="page__row">
+              <p class="page__cell"><a th:href="@{/delete/{id}(id=${user.id})}">Delete</a></p>
+            </div>
+          </div>
+        </div>
+
+        <a href="./signup" class="page__button">Add a new user +</a>
+      </div>
+
+    </div>
+  </body>
+</html>

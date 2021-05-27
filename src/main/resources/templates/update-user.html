@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Updating</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" th:href="@{../css/style.css}">            
+    </head>
+    <body>
+        <div class="page">
+        <div class="page__container">
+            <h2 class="page__title">Update him / -er</h2>
+
+            <form action="#" th:action="@{./update/{id}(id=${user.id})}" th:object="${user}" method="post">
+
+                <div class="page__block">
+                    <label for="name">Name</label>
+                    <input type="text" th:field="*{name}" id="name" placeholder="Name">
+                    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+                </div>
+
+                <div class="page__block">
+                    <label for="email">Email</label>
+                    <input type="text" th:field="*{email}" id="email" placeholder="Email">
+                    <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+                </div>
+
+                <button class="page__button" type="submit">Update</button>
+            </form>
+        </div>
+    </div>                         
+    </body>
+</html>
