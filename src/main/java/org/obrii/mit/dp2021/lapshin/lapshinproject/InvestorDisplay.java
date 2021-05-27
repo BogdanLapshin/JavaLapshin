@@ -8,10 +8,7 @@ package org.obrii.mit.dp2021.lapshin.lapshinproject;
 import org.obrii.mit.dp2021.lapshin.user.UserInterface;
 import org.obrii.mit.dp2021.lapshin.display.Display;
 
-/**
- *
- * @author NEVM PC
- */
+
 public class InvestorDisplay extends Display{
 
     public InvestorDisplay(UserInterface userInterface) {

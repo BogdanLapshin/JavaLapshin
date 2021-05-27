@@ -1,8 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : 29.01.2021, 15:42:04
-    Author     : NEVM PC
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

@@ -4,10 +4,7 @@ package org.obrii.mit.dp2021.lapshin;/*
  * and open the template in the editor.
  */
 
-/**
- *
- * @author NEVM PC
- */
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;

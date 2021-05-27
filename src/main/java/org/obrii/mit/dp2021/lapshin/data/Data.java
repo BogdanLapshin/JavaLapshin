@@ -13,10 +13,6 @@ import javax.persistence.Id;
 
 
 
-/**
- *
- * @author NEVM PC
- */
 @Entity
 public class  Data implements Serializable {
     @Id
