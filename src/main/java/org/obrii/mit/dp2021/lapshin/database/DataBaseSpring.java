@@ -11,10 +11,7 @@ import org.obrii.mit.dp2021.lapshin.data.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-/**
- *
- * @author NEVM PC
- */
+
 @Component
 public class DataBaseSpring {
     

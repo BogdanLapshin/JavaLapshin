@@ -19,10 +19,7 @@ import org.obrii.mit.dp2021.lapshin.files.Config;
 import org.obrii.mit.dp2021.lapshin.files.FilesCrud;
 import org.obrii.mit.dp2021.lapshin.storehouse.DataCrudInterface;
 
-/**
- *
- * @author NEVM PC
- */
+
 @WebServlet(name = "DinamicForm", urlPatterns = {"/DinamicForm"})
 public class DinamicForm extends HttpServlet {
 //DataCrudInterface dataCrud = new FilesCrud(new File(Config.getFileName()));

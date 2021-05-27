@@ -4,11 +4,6 @@
  * and open the template in the editor.
  */
 package org.obrii.mit.dp2021.lapshin.user;
-
-/**
- *
- * @author 38068
- */
 import java.util.Arrays;
 import java.util.List;
 

@@ -8,10 +8,7 @@ package org.obrii.mit.dp2021.lapshin.storehouse;
 import java.util.List;
 import org.obrii.mit.dp2021.lapshin.data.Data;
 
-/**
- *
- * @author NEVM PC
- */
+
 public interface DataCrudInterface {
 
   //  void createData(Data data);

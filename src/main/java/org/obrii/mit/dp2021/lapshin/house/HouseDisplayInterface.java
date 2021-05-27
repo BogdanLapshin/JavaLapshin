@@ -5,10 +5,7 @@
  */
 package org.obrii.mit.dp2021.lapshin.house;
 
-/**
- *
- * @author NEVM PC
- */
+
 public interface HouseDisplayInterface {
    //  public String showAnotherMessage(UserInterface useruInterface);
 

@@ -8,10 +8,7 @@ package org.obrii.mit.dp2021.lapshin.database;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-/**
- *
- * @author NEVM PC
- */
+
 public class BDconnection {
     
     public static Connection connect(){

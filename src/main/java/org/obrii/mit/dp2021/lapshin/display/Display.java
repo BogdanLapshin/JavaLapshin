@@ -7,10 +7,6 @@ package org.obrii.mit.dp2021.lapshin.display;
 
 import org.obrii.mit.dp2021.lapshin.user.UserInterface;
 
-/**
- *
- * @author NEVM PC
- */
 public class Display implements DisplayInterface{
 
     private UserInterface userInterface;

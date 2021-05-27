@@ -8,10 +8,7 @@ package org.obrii.mit.dp2021.lapshin.house;
 import org.obrii.mit.dp2021.lapshin.display.Display;
 import org.obrii.mit.dp2021.lapshin.user.UserInterface;
 
-/**
- *
- * @author NEVM PC
- */
+
 public abstract class HouseAbstractDisplay extends Display implements HouseDisplayInterface{
 
     public HouseAbstractDisplay(UserInterface userInterface) {
